@@ -2707,7 +2707,16 @@
 
         border-left: 4px solid var(--gold) !important;
       }
-    </style>
+    
+.instagram-fixed,.donate-fixed{
+position:fixed;right:20px;z-index:9999;
+padding:12px 16px;border-radius:12px;
+text-decoration:none;font-weight:bold;color:white;
+}
+.instagram-fixed{bottom:80px;background:#E1306C;}
+.donate-fixed{bottom:20px;background:#2e7d32;}
+
+</style>
   </head>
   <body>
     <div class="leaf-bg" aria-hidden="true">
@@ -4322,5 +4331,16 @@
         }
       });
     </script>
-  </body>
+  
+<a class="instagram-fixed" href="https://www.instagram.com/jardimsecretoprojeto?igsh=MXZsNjk5amh0ajh6dA==" target="_blank">📸 Instagram</a>
+<a class="donate-fixed" href="#" onclick="copiarPix();return false;">💚 Doar</a>
+
+<script>
+function copiarPix(){
+ navigator.clipboard.writeText('SUA_CHAVE_PIX_AQUI');
+ alert('Chave PIX copiada!');
+}
+</script>
+
+</body>
 </html>
